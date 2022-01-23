@@ -1,3 +1,5 @@
+""" TO DO: modify for CLI use with argument for the screen name in order to easily be called via my Go program. """
+
 from TwitterAPI import TwitterAPI, TwitterRequestError, TwitterConnectionError
 
 SCREEN_NAME = ''
