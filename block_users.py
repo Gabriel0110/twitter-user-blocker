@@ -11,6 +11,7 @@ try:
     userID = r.json()['data']['id']
     blockedUsers = list(set(user['screen_name'] for user in api.request(f'users/:{userID}/blocking', {'include_entities': 'false', 'skip_status':'true'})))
 
+    # Check if the user is already in your block list
     if SCREEN_NAME in blockedUsers:
         print("User already blocked.")
     else:
